@@ -68,14 +68,13 @@ class BayesianOptimizer:
     @staticmethod
     def lgbm_save_params(study: Study, params_name: str):
         params = study.best_trial.params
-        params["seed"] = 42
-        params["feature_fraction_seed"] = 42
-        params["bagging_seed"] = 42
-        params["drop_seed"] = 42
-        params["boosting"] = "gbdt"
-        params["objective"] = "rmse"
-        params["verbosity"] = -1
-        params["n_jobs"] = -1
+        params["boosting"] = "dart"
+        params["objective"] = "binary"
+        params["metric"] = "AUC"
+        params["device"] = "gpu"
+        params["gpu_platform_id"] = 0
+        params["gpu_device_id"] = 0
+        params["verbosity"] = 0
 
         path = to_absolute_path("../../parameters/" + params_name)
         with open(path, "w") as p:
