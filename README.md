@@ -8,5 +8,5 @@ This repository is the code that placed 78th in [Riiid Answer Correctness Predic
 * lightgbm
 * scikit-learn
 * optuna
-* neptune
+* neptune.ai
 * PyYAML
