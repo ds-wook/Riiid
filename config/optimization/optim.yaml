@@ -1,0 +1,9 @@
+dataset:
+  path: "../../input/riiid-cross-validation-files/"
+
+model:
+  verbose: 100
+
+optimization:
+  trials: 100
+  params: best_lgbm_params.yaml

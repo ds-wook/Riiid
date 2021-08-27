@@ -1,0 +1,6 @@
+dataset:
+  path: "../../input/riiid-cross-validation-files/"
+
+model:
+  verbose: 100
+  params: "../../input/the-best-of-all-parameters-on-lightgbm/The_best_of_all_parameters_on_LightGBM.pickle"
